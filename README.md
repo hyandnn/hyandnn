@@ -1,4 +1,6 @@
 ### Hi there 👋
+### I'm currently studying in RWTH Aachen 🌱
+### I am here to document my learning and programming experience 📫
 
 <!--
 **hyandnn/hyandnn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
