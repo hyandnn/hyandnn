@@ -1,44 +1,39 @@
-# 👋 Hi there, I'm Haoling Yang!
+👋 Hi, I'm Haoling Yang!
 
-🚀 Robotics Enthusiast | 🤖 Machine Learning Explorer | 🎯 Problem Solver
+Robotics & AI enthusiast with a passion for building intelligent and physically grounded systems.
 
-Welcome to my GitHub! I’m currently pursuing my **Master of Science in Robotic Systems Engineering** at **RWTH Aachen University**, Germany. My journey started with a passion for **Information Engineering** during my Bachelor's at **Beijing Jiaotong University**, and it has since evolved into exploring the intersection of **machine learning** and **robotics**.
-
----
-
-## 🌟 Highlights of What I Do:
-- **🧠 AI Research**: From building **surrogate models** with GANs to applying **AutoML** in industrial optimization, I thrive on creating intelligent systems that make life (and robots) smarter.
-- **🤖 Robotics**: Innovating UAV-based solutions and integrating AI for autonomous inspection.
-- **📊 Optimization**: Approximating simulations with ANN for time-efficient decision-making in **remanufacturing**.
+📌 About Me  
+I'm a Master's graduate in Robotic Systems Engineering from RWTH Aachen University, with a Bachelor's in Electronic Information Engineering from Beijing Jiaotong University.  
+Currently, I'm working as a Perception Algorithm Engineer at Roborock, focusing on multimodal sensor fusion for intelligent systems.  
+My work lies at the intersection of machine learning, robotics, and physical simulation—building systems that combine perception, control, and optimization.
 
 ---
 
-## 📌 Technical Arsenal:
-- **Languages and Frameworks**: Python, C/C++, MATLAB, PyTorch, TensorFlow
-- **Topics I love**: Machine Learning, Reinforcement Learning, Wireless Communication, Control Theory
+🛠 Technical Toolkit  
+**Tools:** Python, C/C++, MATLAB, PyTorch, TensorFlow  
+**Focus Areas:** Computer Vision, Motion Analysis, Collision Detection, Control Systems
 
 ---
 
-## 🏆 Fun Facts & Achievements:
-- Honorable Mention: **Mathematical Contest in Modeling (2021)**  
-- Built a UAV system to map forest litter—because nature needs robots too!  
-- Often found tweaking neural networks or debugging Python scripts with a cup of coffee ☕.
+🚀 Selected Projects
+
+- 🧩 **Physics-Based Collision Detection in Simulation Engines**  
+  *Institute of Man-Machine Interaction (MMI), RWTH Aachen*  
+  Reconstructed the collision detection framework in the VEROSIM simulation engine.  
+  Developed a broadphase Sweep and Prune module, introduced BVH structures in the midphase, and redesigned the modular pipeline for extensibility and robustness.
+
+- 🧗 **Vision-Based Performance Analysis in Speed Climbing**  
+  *Institute of Mechanism Theory, Machine Dynamics and Robotics (IGMR), RWTH Aachen*  
+  Designed a monocular vision system for Olympic speed climbing analysis using YOLOv11n and MediaPipe.  
+  Enabled depth-free 3D keypoint estimation, trajectory reconstruction, and joint analysis under challenging conditions like motion blur and occlusion.
 
 ---
 
-Feel free to explore my repositories or connect with me via [email](mailto:haoling.yang@rwth-aachen.de). Let’s build something amazing together!
+🏆 Highlights  
+- Honorable Mention · Mathematical Contest in Modeling 2021 
+- Former student researcher (HiWi) involved in simulation engine algorithm development at MMI RWTH Aachen
 
-<!--
-**hyandnn/hyandnn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+📫 Contact  
+Feel free to check out my work or reach out via [email](haoling.yang@rwth-aachen.de)!
