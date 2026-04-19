@@ -7,13 +7,6 @@
 ### 🛠 Professional Profile
 I am a Robotics Engineer with a focus on **3D Perception** and **Sensor Fusion**. Currently, I develop perception algorithms for one of the world's leading **consumer robotics companies**, specializing in multimodal data processing to enhance robot autonomy in complex environments.
 
-* 🎓 **M.Sc. in Robotic Systems Engineering** | RWTH Aachen University
-* 🎓 **B.Eng. in Electronic Information Engineering** | Beijing Jiaotong University
-* 🔭 **Current Interests:** Real-time 3D Reconstruction, Efficient Transformer Inference, and Neural Rendering (NeRF/3DGS) for robotics.
-
----
-
-### 💻 Technical Expertise
 - **Languages:** C++ (Modern standards), Python, MATLAB
 - **Deep Learning:** PyTorch, TensorRT, Model Quantization & Optimization
 - **Robotics & CV:** OpenCV, PCL, ROS/ROS2, Multi-sensor Calibration, Collision Detection
