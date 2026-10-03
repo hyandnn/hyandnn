@@ -4,7 +4,7 @@
 
 I build perception software that turns imperfect sensor observations into useful geometry for robots.
 
-Currently a **Perception Algorithm Engineer in consumer robotics**, working on stereo-led and LiDAR-led systems with supporting IMU and odometry information. My work spans geometric reasoning, model post-processing, temporal consistency and efficient C++ implementation.
+Currently a **Perception Algorithm Engineer in consumer robotics**, working on multi-sensor perception systems led by stereo or LiDAR observations. My work spans geometric reasoning, model post-processing, temporal consistency and efficient C++ implementation.
 
 M.Sc. in **Robotic Systems Engineering · RWTH Aachen University**.
 

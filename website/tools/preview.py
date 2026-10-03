@@ -7,17 +7,18 @@ import re
 
 root = Path(__file__).resolve().parents[1]
 pages = {}
-for f in [root/'index.html', *sorted((root/'projects').glob('*.html'))]:
+for f in [root/'index.html', root/'404.html', *sorted((root/'projects').glob('*.html')), root/'zh/index.html', root/'zh/404.html', *sorted((root/'zh/projects').glob('*.html'))]:
     page = f.read_text()
-    prefix = '../' if f.parent.name == 'projects' else ''
+    import os
+    prefix = os.path.relpath(root/'assets',f.parent).replace(os.sep,'/')+'/'
     css = (root/'assets/style.css').read_text()
     js = (root/'assets/app.js').read_text()
-    page = page.replace(f'<link rel="stylesheet" href="{prefix}assets/style.css">', '<style>'+css+'</style>')
-    page = page.replace(f'<script src="{prefix}assets/app.js" defer></script>', '<script>'+js+'</script>')
+    page = page.replace(f'<link rel="stylesheet" href="{prefix}style.css">', '<style>'+css+'</style>')
+    page = page.replace(f'<script src="{prefix}app.js" defer></script>', '<script>'+js+'</script>')
     for asset in (root/'assets').iterdir():
         if asset.suffix in ['.png','.gif','.svg']:
             data='data:'+mimetypes.guess_type(asset)[0]+';base64,'+base64.b64encode(asset.read_bytes()).decode()
-            page=page.replace(prefix+'assets/'+asset.name,data)
+            page=page.replace(prefix+asset.name,data)
     page = re.sub(r'href="(https?://[^"]+)"', r'href="\1" target="_blank" rel="noopener noreferrer"', page)
     # Local navigation requests load the corresponding exact page in the parent.
     nav = '''<script>document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href');if(!h||/^(https?:|mailto:|data:)/.test(h))return;e.preventDefault();parent.postMessage({portfolioNavigation:h},'*');});</script>'''
