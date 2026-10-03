@@ -1,16 +1,20 @@
-### Hi there 👋
+# 👋 I'm ikurabot
+### Perception Engineer | Robotics & 3D Computer Vision
+*Building intelligent robotic systems with robust multimodal perception.*
 
-<!--
-**hyandnn/hyandnn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🛠 Professional Profile
+Robotics Engineer focusing on **3D Perception and Multi-Sensor Fusion**.
+I develop production-grade perception algorithms for a leading consumer robotics company.
 
-Here are some ideas to get you started:
+Prior research experience at RWTH Aachen University across MMI, IGMR and WZL institutes.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Core Toolset
+- Programming: Modern C++, Python, MATLAB, CMake
+- Deep Learning: PyTorch, TensorRT, Model Quantization & Edge Optimization
+- Computer Vision & Robotics: OpenCV, PCL, ROS/ROS2, Multi-sensor Calibration, Point Cloud Processing, Collision Detection
+- Simulation: VEROSIM, MuJoCo, Gazebo
+
+## 📬 Contact
+Email: haoling.yang@rwth-aachen.de
+
+> "The best way to predict the future is to build it."
