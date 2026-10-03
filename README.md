@@ -11,7 +11,7 @@ M.Sc. in **Robotic Systems Engineering · RWTH Aachen University**.
 ## Selected work
 
 ### 01 / Stereo perception
-**Making thin obstacles useful to the perception system.**
+**Turning sparse observations into usable obstacle geometry.**
 
 <img src="assets/stereo.gif" width="100%" alt="Top-view synthetic stereo illustration: forward camera field of view, visible surfaces and geometric scene representation." />
 

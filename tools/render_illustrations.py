@@ -174,11 +174,32 @@ def make_motion(phase):
     joints=[(cx,cy-22),(cx,cy),(cx-27,cy+14),(cx+31,cy-19),(cx,cy+35),(cx-24,cy+65),(cx+26,cy+60)]
     for i,j in [(0,1),(1,2),(1,3),(1,4),(4,5),(4,6)]:d.line((*joints[i],*joints[j]),fill=PURPLE,width=3)
     for x,y in joints:dot(d,x,y,TEXT,4)
-    # Schematic wall coordinates and aligned trajectory.
-    d.rectangle((407,72,624,296),outline='#554668')
-    path=[(510+25*math.sin(i/72*math.tau),284-i/72*195) for i in range(73)]
-    d.line(path,fill='#514368',width=2);n=max(2,int(progress*72)+1)
-    d.line(path[:n],fill=PURPLE,width=3);dot(d,*path[n-1],TEXT,5)
+    # A moving local video frame maps to a fixed window in wall-template space.
+    # Reference correspondences are synthetic, not recovered research results.
+    d.text((386,77),'Frame',font=font(16),fill=MUTED)
+    d.text((552,52),'Template',font=font(16),fill=MUTED)
+    d.rectangle((550,77,687,305),outline='#665780',width=2)
+    for x,y in [(570,92),(657,98),(580,284),(656,268)]:dot(d,x,y,'#665780',4)
+    refs=[(578,133),(650,166),(599,224)]
+    window=(563,114,675,249)
+    d.rectangle(window,outline=PURPLE,width=2)
+    theta=.10*math.sin(phase);cx=437;cy=180+9*math.cos(phase)
+    def local(u,v):
+        x,y=(u-.5)*97,(v-.5)*135
+        return (cx+x*math.cos(theta)-y*math.sin(theta),
+                cy+x*math.sin(theta)+y*math.cos(theta))
+    corners=[local(0,0),local(1,0),local(1,1),local(0,1)]
+    d.line(corners+[corners[0]],fill=PURPLE,width=2)
+    for x,y in refs:
+        sx,sy=local((x-window[0])/(window[2]-window[0]),
+                    (y-window[1])/(window[3]-window[1]))
+        # Dashed links distinguish correspondences from motion trajectories.
+        for k in range(0,20,2):
+            t0,t1=k/20,(k+1)/20
+            d.line((sx+(x-sx)*t0,sy+(y-sy)*t0,
+                    sx+(x-sx)*t1,sy+(y-sy)*t1),fill='#88729f',width=1)
+        dot(d,sx,sy,GOLD,4);dot(d,x,y,GOLD,4)
+    n=max(2,int(progress*72)+1)
     d.line((752,286,1045,286),fill=MUTED);d.line((752,82,752,286),fill=MUTED)
     curve=[(755+i*4,220-65*math.sin(i/72*math.tau)**2-17*math.sin(i/72*math.tau*3)) for i in range(73)]
     d.line(curve,fill=PURPLE,width=3);x,y=curve[min(72,n-1)];d.line((x,87,x,286),fill='#665780');dot(d,x,y,TEXT,4)
